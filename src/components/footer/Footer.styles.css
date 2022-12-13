@@ -1,0 +1,17 @@
+.fontawesome i {
+    font-size: 32px;
+  }
+  
+  .columnasfooter-brand p {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+  }
+  
+  .columnasfooter p{
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .columnasfooter a {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+  }

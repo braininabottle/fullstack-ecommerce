@@ -1,0 +1,25 @@
+.single-product-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white !important;
+    padding: 25px;
+    width: 800px;
+    height: 100%;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.productContainer{
+    display:flex;
+    justify-content: center;
+}
+
+.fontStyle{
+    font-family: 'Ubuntu', sans-serif;
+}

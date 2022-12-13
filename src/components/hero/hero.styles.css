@@ -1,0 +1,10 @@
+/* .imageSize {
+        width: 100%;
+        height: 600px;
+} */
+
+.titleFirstSlideCustom{
+ font-size: 50px;
+ font-family: 'Ubuntu', sans-serif;
+ height: 32vh
+}

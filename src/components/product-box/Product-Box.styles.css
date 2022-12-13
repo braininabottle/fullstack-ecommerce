@@ -1,0 +1,41 @@
+.product-container{
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+}
+
+.product-container:hover {
+    transform: scale(1.05);
+  }
+
+.product-comtainer img{
+    width: 100px;
+}
+
+.product-container .customQtyBox{
+    flex:1;
+    padding:35px;
+    font-size: 20px;
+    font-weight: bold;
+    filter: none;
+}
+
+.product-container .cartDeleteButton{
+    font-size: 15px;
+    padding: 0px 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.product-container .customProductCartTitle{
+    padding: 35px;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}

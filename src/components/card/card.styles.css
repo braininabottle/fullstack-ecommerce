@@ -1,0 +1,45 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white !important;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  margin-top: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+
+.card-price {
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card-stock {
+  font-family: 'Ubuntu', sans-serif
+}
+
+.divButtonAddToCart{
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 15px;
+}
+
+.card-description{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+}

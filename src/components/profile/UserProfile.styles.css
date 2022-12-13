@@ -1,0 +1,31 @@
+.userForm form{
+    display: flex;
+    flex-direction: column;
+    background-color: white !important;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 25px;
+    color:black;
+    width: 50%;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    height: 50%;
+
+}
+
+.userForm label{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.userForm {
+    justify-content: center;
+
+}
+
+.userFormTitle{
+    font-family:'Paytone One', sans-serif;
+}
