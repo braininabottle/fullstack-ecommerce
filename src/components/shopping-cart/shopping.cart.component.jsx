@@ -15,7 +15,7 @@ const ShoppingCart = () => {
     const productReducer = async () => {
         console.log('estoy en el try catch')
         try {
-            const response = await axios.put('https://back-ecommerce-project5-production.up.railway.app/', { cart })
+            const response = await axios.put('https://back-ecommerce-project5-production.up.railway.app/api/products/reducedstock', { cart })
             console.log(response)
         } catch (error) {
             console.log(error.message)

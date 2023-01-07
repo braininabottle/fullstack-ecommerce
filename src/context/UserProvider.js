@@ -9,7 +9,7 @@ const UserProvider = ({children})=> {
 
     const signUp = async (user) => {
         try {
-            const response = await axios.post('https://back-ecommerce-project5-production.up.railway.app/', user)
+            const response = await axios.post('/api/users', user)
             if(response.data.success){
                 dispatch({ type: 'LOGIN', payload: response.data.token })
                 Swal.fire({
@@ -62,7 +62,7 @@ const UserProvider = ({children})=> {
 
 
     const validateToken = async (token) => {
-            const response = await axios.get('https://back-ecommerce-project5-production.up.railway.app/', {
+            const response = await axios.get('https://back-ecommerce-project5-production.up.railway.app/api/users/login', {
                 headers: {
                     Authorization: 'Bearer ' + token
                 }
@@ -75,7 +75,7 @@ const UserProvider = ({children})=> {
 
     const getUserData = async (token) => {
         try{
-            const response = await axios.get('https://back-ecommerce-project5-production.up.railway.app/', {
+            const response = await axios.get('https://back-ecommerce-project5-production.up.railway.app/api/users', {
                 headers: {
                     Authorization: 'Bearer ' + token
                 }
@@ -89,7 +89,7 @@ const UserProvider = ({children})=> {
     }
     
     const editUserData = async (user) => {
-        try{const response = await axios.put('https://back-ecommerce-project5-production.up.railway.app/', user, {
+        try{const response = await axios.put('https://back-ecommerce-project5-production.up.railway.app/api/users', user, {
             headers: {
                 Authorization: 'Bearer ' + userState.token
             }
