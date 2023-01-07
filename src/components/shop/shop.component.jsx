@@ -11,7 +11,7 @@ const Shop = () => {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('https://backend-jp-production.up.railway.app/api/products')
+    fetch('https://back-ecommerce-project5-production.up.railway.app/')
       .then((response) => response.json())
       .then((response) => {
         setProducts(response.products)

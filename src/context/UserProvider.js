@@ -9,7 +9,7 @@ const UserProvider = ({children})=> {
 
     const signUp = async (user) => {
         try {
-            const response = await axios.post('https://backend-jp-production.up.railway.app/api/users', user)
+            const response = await axios.post('https://back-ecommerce-project5-production.up.railway.app/', user)
             if(response.data.success){
                 dispatch({ type: 'LOGIN', payload: response.data.token })
                 Swal.fire({
@@ -33,7 +33,7 @@ const UserProvider = ({children})=> {
 
     const login = async (user) => {
         try{
-            const response = await axios.post('https://backend-jp-production.up.railway.app/api/users/login', user)
+            const response = await axios.post('https://back-ecommerce-project5-production.up.railway.app/api/users/login', user)
             if(response.data.success){
                 dispatch({type : 'LOGIN', payload: response.data.token})
                 Swal.fire({
@@ -62,7 +62,7 @@ const UserProvider = ({children})=> {
 
 
     const validateToken = async (token) => {
-            const response = await axios.get('https://backend-jp-production.up.railway.app/api/users/login', {
+            const response = await axios.get('https://back-ecommerce-project5-production.up.railway.app/', {
                 headers: {
                     Authorization: 'Bearer ' + token
                 }
@@ -75,7 +75,7 @@ const UserProvider = ({children})=> {
 
     const getUserData = async (token) => {
         try{
-            const response = await axios.get('https://backend-jp-production.up.railway.app/api/users', {
+            const response = await axios.get('https://back-ecommerce-project5-production.up.railway.app/', {
                 headers: {
                     Authorization: 'Bearer ' + token
                 }
@@ -89,7 +89,7 @@ const UserProvider = ({children})=> {
     }
     
     const editUserData = async (user) => {
-        try{const response = await axios.put('https://backend-jp-production.up.railway.app/api/users', user, {
+        try{const response = await axios.put('https://back-ecommerce-project5-production.up.railway.app/', user, {
             headers: {
                 Authorization: 'Bearer ' + userState.token
             }

@@ -28,7 +28,7 @@ const SingleProductView = () => {
     }
 
     const getProduct = async () => {
-        const response = await axios.get(`https://backend-jp-production.up.railway.app/api/products/${id}`)
+        const response = await axios.get(`http://localhost:3000/api/products/${id}`)
         const productInfo = response.data.product
         setProduct(productInfo)
     }
