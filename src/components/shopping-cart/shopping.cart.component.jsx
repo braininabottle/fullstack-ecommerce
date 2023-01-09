@@ -15,7 +15,7 @@ const ShoppingCart = () => {
     const productReducer = async () => {
         console.log('estoy en el try catch')
         try {
-            const response = await axios.put('http://localhost:5000/api/products/reducedstock', { cart })
+            const response = await axios.put('https://dramshop.onrender.com/api/products/reducedstock', { cart })
             console.log(response)
         } catch (error) {
             console.log(error.message)
