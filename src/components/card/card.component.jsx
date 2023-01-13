@@ -18,7 +18,7 @@ const Card = ({ product }) => {
   return (
 
     <div className='card-container'>
-      <img
+      <img className='custom-image' width={150} height={200}
         alt={title}
         src={imageUrl}
       />
