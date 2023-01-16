@@ -9,9 +9,9 @@ e-commerce con sus funciones mas basicas: despliegue de sección de productos, s
 <br>
 <br>
 
-## Link de la aplicación: 
+## Link de la aplicación (deployment con Render): https://dramshop-site.onrender.com/
 
-En esta app encontrarás lo siguiente 🧾	 :
+En esta app encontrarás lo siguiente 🧾	 : 
 1. Una sección **/HOME** con despliegue de todos los productos ofrecidos por la licoreria, filtro de busca y carrousel interactivo con imagenes. Ademas puedes navegar entre los distintos.
 componentes del **/NAVBAR**.
 2. Una sección de **/LOGIN** donde puedes registrar tu usuario y además iniciar sesión una vez que ya tengas tu usuario registrado.
