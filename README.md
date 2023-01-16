@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+<h1>Bienvenido a Bienbebidos®, una licoreria que te entrega todo lo que buscas a solo un par de clicks!!🥂</h1> 
+<br>
+<br>
+<h1>Introducción</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Proyecto elaborado con fines estudiantiles mientras me encontraba cursando mi Bootcamp de Desarrollo Web Full Stack. La finalidad de este proyecto fue construir un
+e-commerce con sus funciones mas basicas: despliegue de sección de productos, sección de login y logout, perfil de usuario, carrito de compras y checkout con metodo Paypal.
+</p>
+<br>
+<br>
 
-## Available Scripts
+## Link de la aplicación: 
 
-In the project directory, you can run:
+En esta app encontrarás lo siguiente 🧾	 :
+1. Una sección **/HOME** con despliegue de todos los productos ofrecidos por la licoreria, filtro de busca y carrousel interactivo con imagenes. Ademas puedes navegar entre los distintos.
+componentes del **/NAVBAR**.
+2. Una sección de **/LOGIN** donde puedes registrar tu usuario y además iniciar sesión una vez que ya tengas tu usuario registrado.
+3. Una sección de **/PROFILE** donde el usuario puede registrar su información de contacto dentro de nuestra web.
+4. Y finalmente una sección de **/CART** con el carrito de compras en el cual se guardan la totalidad de los productos hasta que el cliente realiza la compra.
+<br>
+<br>
+<br>
+<h1>Estado del proyecto </h1>
 
-### `npm start`
+**Terminado** 👌
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+<br>
+<br>
+<br>
+<h1> Tecnologias usadas para construir este proyecto 🛠️</h1>
+<br>
+<p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919827.png" height="48" width="48"/>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+        <img src="https://cdn-icons-png.flaticon.com/512/919/919826.png" height="48" width="48"/>
+    </a>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" height="48" width="48" />
+    </a>
+    <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/602px-Bootstrap_logo.svg.png" height="48" width="48" />
+    </a>
+    <a href="https://reactjs.org/docs/getting-started.html">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" height="48" width="48"/>
+    </a>
+    <a href="https://expressjs.com/">
+        <img src="https://miro.medium.com/max/960/1*X7a7F-yXRUAGLGLzdlGQMA.png" height="48" width="48"/>
+    </a>
+    <a href="https://docs.npmjs.com/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh9vC2g2zT7TKq_T2hgXPm50Kmg8lrwDSZGcujUf21JQ&s" height="48" width="48"/>
+    </a>
+     <a href="https://www.mongodb.com/es">
+        <img src="https://www.dblandit.com/img/educacion/mongodb.jpg" height="48" width="48"/>
+    </a>
+      <a href="https://code.visualstudio.com/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCs7_EKbgALLq-gRSjih3SyFRSRX7uVa9Xzag8G_JIIQ&s" height="48" width="48"/>
+    </a>
+      <a href="https://mui.com/material-ui/getting-started/installation/">
+        <img src="https://mui.com/static/logo.png" height="48" width="48"/>
+    </a>
+</p>
+<br>
+<br>
+<br>
+<h1> Autor ✒️ </h1>
+<p> Juan Pablo Lagos Moreno ® </p>
