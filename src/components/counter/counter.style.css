@@ -1,9 +1,12 @@
 .counterContainer{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .divButtonAddToCart{
     font-family: 'Ubuntu', sans-serif;
     margin-top: 15px;
+    justify-content: center;
+    align-items: center;
   }
