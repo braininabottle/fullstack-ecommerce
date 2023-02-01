@@ -13,7 +13,6 @@ const ShoppingCart = () => {
     const navigate = useNavigate()
 
     const productReducer = async () => {
-        console.log('estoy en el try catch')
         try {
             const response = await axios.put('https://dramshop.onrender.com/api/products/reducedstock', { cart })
             console.log(response)
@@ -24,13 +23,13 @@ const ShoppingCart = () => {
 
     return (
         <Fragment>
-            <div className='cart-container mx-5 fs-2'>
+            <div className='cart-container'>
                 <h1 className='cart-title mt-3 mb-3 text-white'>
                     Productos en tu carrito de compras <span className='text-white'>({qty})</span></h1>
-                <div>
+                <div className='product-cart-container'>
                     {cart.map(el => <ProductBox product={el} key={el._id} />)}
                 </div>
-                <div >
+                <div className='payPalButtons'>
                     {cart.length ? (
                         <PayPalButtons
                             createOrder={(data, actions) => {

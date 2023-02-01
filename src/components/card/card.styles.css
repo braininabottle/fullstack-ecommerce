@@ -51,3 +51,9 @@
   font-size: 20px;
   margin-top: 15px;
 }
+
+@media only screen and (max-width: 835px) {
+  .cart-container {
+  width: 95vw; /* Cambia el ancho de la tarjeta del carrito a 95% de la anchura de la ventana */
+  }
+  }

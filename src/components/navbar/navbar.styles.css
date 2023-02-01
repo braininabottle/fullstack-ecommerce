@@ -61,8 +61,19 @@ button::before{
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
     font-size: 20px;
+    display: flex;
+    align-items: center important!;
+    justify-content: center important!;
 }
 
 .badgeStyle{
     color:white
+}
+
+@media screen and (max-width: 1000px) {
+    .logOutButtonCustom{
+        margin:auto;
+    }
+
+  
 }

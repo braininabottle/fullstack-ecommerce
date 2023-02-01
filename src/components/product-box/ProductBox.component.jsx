@@ -21,11 +21,11 @@ const ProductBox = ({product}) => {
             <div className='customProductCartTitle'>
                 <p>{title}</p>
             </div>
-            <p className='customQtyBox fs-3'>{`${qty} * ${formatter.format(price)} = ${formatter.format(qty * price)}`}</p>
-            <div className='cartDeleteButton d-flex'>
+            <p className='customQtyBox'>{`${qty} * ${formatter.format(price)} = ${formatter.format(qty * price)}`}</p>
+            <div className='cartDeleteButton mt-5'>
                 <button
                 onClick={()=>context.deleteProdcutFromCart(_id)} 
-                className='btn btn-dark btn-lg align-content-center'
+                className='btn btn-dark'
                 >eliminar</button>
             </div>
         </div>
