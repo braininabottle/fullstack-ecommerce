@@ -22,3 +22,9 @@ body {
     color: #0D1315;
     font-family:'Paytone One', sans-serif;
   }
+
+  @media only screen and (max-width: 415px) {
+    .app-title {
+    font-size: 30px;/* Cambia el ancho de la tarjeta del carrito a 95% de la anchura de la ventana */
+    }
+  }

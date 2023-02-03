@@ -13,3 +13,12 @@ label{
 .login-title{
     font-family:'Paytone One', sans-serif;
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 570px) {
+    .image-size {
+        max-width: 200px;
+        max-height: 200px;
+    }
+  }
+

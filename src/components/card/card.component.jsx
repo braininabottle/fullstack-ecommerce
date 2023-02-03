@@ -25,12 +25,10 @@ const Card = ({ product }) => {
       <Link to={`/product/${_id}`}>
         <h3 className='card-title'>{title}</h3>
       </Link>
-
       <p className='card-price'>{formatter.format(price)} <span className='quantity-reference'>/Prec. Unit</span></p>
       <p className='card-stock'>Productos en stock : {stock}</p>
       <Counter product={product}/>
     </div>
-
   );
 };
 

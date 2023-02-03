@@ -1,13 +1,11 @@
-import '../product-box/Product-Box.styles.css'
-import { useContext } from 'react'
-import CartContext from '../../context/CartContext'
-
-
+import '../product-box/Product-Box.styles.css';
+import { useContext } from 'react';
+import CartContext from '../../context/CartContext';
 
 const ProductBox = ({product}) => {
 
-    const {title, imageUrl, qty, price,  _id} = product
-    const context = useContext(CartContext)
+    const {title, imageUrl, qty, price,  _id} = product;
+    const context = useContext(CartContext);
 
     const formatter = new Intl.NumberFormat('es-CL', {
         style: 'currency',
@@ -29,7 +27,7 @@ const ProductBox = ({product}) => {
                 >eliminar</button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProductBox
+export default ProductBox;

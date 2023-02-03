@@ -1,6 +1,6 @@
-import { Fragment } from 'react'
-import ShoppingCart from '../../components/shopping-cart/shopping.cart.component'
-import Navbar from '../../components/navbar/Navbar.component'
+import { Fragment } from 'react';
+import ShoppingCart from '../../components/shopping-cart/shopping.cart.component';
+import Navbar from '../../components/navbar/Navbar.component';
 
 
 const Cart = () => {
@@ -9,7 +9,7 @@ const Cart = () => {
         <Navbar/>
         <ShoppingCart />
     </Fragment>
-    )
-}
+    );
+};
 
-export default Cart
+export default Cart;

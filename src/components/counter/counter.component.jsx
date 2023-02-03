@@ -1,10 +1,10 @@
-import { useState, useContext } from "react"
-import './counter.style.css'
-import CartContext from '../../context/CartContext'
+import { useState, useContext } from "react";
+import './counter.style.css';
+import CartContext from '../../context/CartContext';
 
 const Counter = ({ product }) => {
-  const context = useContext(CartContext)
-  const [qty, setQty] = useState(1)
+  const context = useContext(CartContext);
+  const [qty, setQty] = useState(1);
   const { stock } = product;
 
 
@@ -12,13 +12,13 @@ const Counter = ({ product }) => {
     if (qty >= 2) {
       setQty(qty - 1)
     }
-  }
+  };
 
   const increase = () => {
     if (qty < stock) {
       setQty(qty + 1)
     }
-  }
+  };
 
   return (
     <div className='divButtonAddToCart'>
@@ -51,7 +51,7 @@ const Counter = ({ product }) => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Counter
+export default Counter;

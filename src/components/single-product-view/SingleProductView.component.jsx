@@ -1,42 +1,42 @@
-import React from 'react'
-import { useEffect, useState, useContext, Fragment } from 'react'
-import { useParams } from 'react-router-dom'
-import axios from 'axios'
-import CartContext from '../../context/CartContext'
-import './SingleProductView.styles.css'
-import Spinner from '../spinner/Spinner.component'
+import React from 'react';
+import { useEffect, useState, useContext, Fragment } from 'react';
+import { useParams } from 'react-router-dom';
+import axios from 'axios';
+import CartContext from '../../context/CartContext';
+import './SingleProductView.styles.css';
+import Spinner from '../spinner/Spinner.component';
 
 const SingleProductView = () => {
 
-    const [product, setProduct] = useState({})
-    const { id } = useParams()
-    const { title, price, imageUrl, stock, volume, brand, degrees, description } = product
-    const context = useContext(CartContext)
-    const [qty, setQty] = useState(1)
-    const [loading, setLoading] = useState(true)
+    const [product, setProduct] = useState({});
+    const { id } = useParams();
+    const { title, price, imageUrl, stock, volume, brand, degrees, description } = product;
+    const context = useContext(CartContext);
+    const [qty, setQty] = useState(1);
+    const [loading, setLoading] = useState(true);
 
     const decrease = () => {
         if (qty >= 2) {
             setQty(qty - 1)
-        }
-    }
+        };
+    };
 
     const increase = () => {
         if (qty < stock) {
             setQty(qty + 1)
-        }
-    }
+        };
+    };
 
     const getProduct = async () => {
-        const response = await axios.get(`https://dramshop.onrender.com/api/products/${id}`)
-        const productInfo = response.data.product
-        setProduct(productInfo)
-    }
+        const response = await axios.get(`https://dramshop.onrender.com/api/products/${id}`);
+        const productInfo = response.data.product;
+        setProduct(productInfo);
+    };
 
     useEffect(() => {
         getProduct()
         setLoading(false)
-    }, [])
+    }, []);
 
     const formatter = new Intl.NumberFormat('es-CL', {
         style: 'currency',
@@ -96,7 +96,7 @@ const SingleProductView = () => {
                 </div>
             </div>
         </Fragment >
-    )
-}
+    );
+};
 
-export default SingleProductView
+export default SingleProductView;

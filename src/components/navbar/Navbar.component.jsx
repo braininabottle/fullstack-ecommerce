@@ -1,9 +1,8 @@
-import { Link } from 'react-router-dom'
-import { useContext } from 'react'
-import UserContext from '../../context/Usercontext'
-import CartContext from '../../context/CartContext'
+import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import UserContext from '../../context/Usercontext';
+import CartContext from '../../context/CartContext';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import NightlifeOutlinedIcon from '@mui/icons-material/NightlifeOutlined';
 import * as React from 'react';
 import Badge from '@mui/material/Badge';
 import { styled } from '@mui/material/styles';
@@ -14,8 +13,8 @@ import '../navbar/navbar.styles.css';
 
 const Navbar = () => {
 
-    const context = useContext(UserContext)
-    const cartContext = useContext(CartContext)
+    const context = useContext(UserContext);
+    const cartContext = useContext(CartContext);
 
     const StyledBadge = styled(Badge)(({ theme }) => ({
         '& .MuiBadge-badge': {
@@ -29,9 +28,6 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid">
-                {/* <Link className="navbar-brand logo-container" to='/'>
-                    <NightlifeOutlinedIcon fontSize="large" style={{ color: '#fff' }} />
-                </Link> */}
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -83,7 +79,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
-    )
-}
+    );
+};
 
-export default Navbar
+export default Navbar;

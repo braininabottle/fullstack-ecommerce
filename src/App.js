@@ -1,23 +1,22 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route, Navigate } from 'react-router-dom'
-import Login from './components/login/login.component'
-import Home from './views/home/Home.view'
-import Store from './views/store/store.view'
-import Customer from './views/customer/customer.view'
-import { useContext, useEffect, useState, Fragment } from 'react'
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Login from './components/login/login.component';
+import Home from './views/home/Home.view';
+import Customer from './views/customer/customer.view';
+import { useContext, useEffect, useState, Fragment } from 'react';
 import UserContext from './context/Usercontext';
-import Profile from './views/profile/Profile.view'
-import Cart from './views/cart/Cart.view'
+import Profile from './views/profile/Profile.view';
+import Cart from './views/cart/Cart.view';
 import Product from './views/product/Product.view';
 import Modal from './components/modal/Modal';
 
 
 function App() {
 
-  const context = useContext(UserContext)
-  const token = context.userState.token
-  const [loadingToken, setLoadingToken] = useState(true)
+  const context = useContext(UserContext);
+  const token = context.userState.token;
+  const [loadingToken, setLoadingToken] = useState(true);
   const [showModal, setShowModal] = useState(true);
 
   const validateToken = async () => {
@@ -26,15 +25,15 @@ function App() {
       await context.validateToken(tokenLS)
     }
     setLoadingToken(false)
-  }
+  };
 
   useEffect(() => {
     validateToken()
-  }, [])
+  }, []);
 
   if (loadingToken) {
     return null
-  }
+  };
 
   return (
     <Fragment>

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import CardList from '../card-list/card-list.component';
 import SearchBox from '../search-box/search-box.component';
-import Spinner from '../spinner/Spinner.component'
+import Spinner from '../spinner/Spinner.component';
 import './shop.styles.css';
 
 const Shop = () => {

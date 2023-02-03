@@ -1,4 +1,4 @@
-import './Modal.styles.css'
+import './Modal.styles.css';
 
 
 const Modal = ({ setShowModal }) => {
@@ -15,7 +15,7 @@ const Modal = ({ setShowModal }) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Modal
+export default Modal;

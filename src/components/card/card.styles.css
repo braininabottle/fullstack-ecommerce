@@ -41,12 +41,12 @@
   font-family: 'Ubuntu', sans-serif
 }
 
-.divButtonAddToCart{
+.divButtonAddToCart {
   font-family: 'Ubuntu', sans-serif;
   margin-top: 15px;
 }
 
-.card-description{
+.card-description {
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
   margin-top: 15px;
@@ -54,6 +54,31 @@
 
 @media only screen and (max-width: 835px) {
   .cart-container {
-  width: 95vw; /* Cambia el ancho de la tarjeta del carrito a 95% de la anchura de la ventana */
+    width: 95vw;
+    /* Cambia el ancho de la tarjeta del carrito a 95% de la anchura de la ventana */
   }
+}
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 767px) {
+  .card-container {
+    min-width: 300px;
+    max-width: 500px;
   }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1100px) {
+  .card-container {
+    min-width: 300px;
+    max-width: 500px;
+  }
+}
+
+
+@media only screen and (min-width: 1100px) and (max-width: 1900px) {
+  .card-container {
+    min-width: 480px;
+    max-width: 500px;
+  }
+}

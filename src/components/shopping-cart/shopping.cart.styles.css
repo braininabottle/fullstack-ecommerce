@@ -7,3 +7,10 @@
  width: 200px;
  margin-left: 50px;
 }
+
+.total-price{
+  font-family:'Paytone One', sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
