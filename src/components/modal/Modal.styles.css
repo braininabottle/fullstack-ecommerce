@@ -1,43 +1,67 @@
 @media only screen and (max-width: 600px) {
-    .modal-title {
-      font-size: 30px;
-      margin-top: 50px;
-      margin-bottom: 25px;
-    }
-  
-    .modal-container {
-      width: 80%;
-      height: 80%;
-    }
-  
-    .btn {
-      font-size: 20px;
-    }
+  .modal-title {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
   }
+
+  .modal-container {
+    width: 80%;
+    height: 80%;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}
 
 
 .modal-container {
-    width: 50%;
-    height: 50%;
-    background-color: white;
-    position: fixed;
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.modal-title {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  color: #0D1315;
+  font-family: 'Paytone One', sans-serif;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .custom-modal-button {
+    font-size: 10px;
+    margin: 10px;
+  }
+
+}
+
+.buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 8;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 10px;
+    justify-content: space-between;
 }
 
-.modal-title{
-    margin-top: 75px;
-    margin-bottom: 50px;
-    font-size: 40px;
-    color: #0D1315;
-    font-family:'Paytone One', sans-serif;
-}
+@media only screen and (max-width: 600px) {
+  
+  .modalButtons{
+    padding: 10px;
+  }
 
+}
