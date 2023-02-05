@@ -20,15 +20,15 @@ function App() {
   const [showModal, setShowModal] = useState(true);
 
   const validateToken = async () => {
-    const tokenLS = window.localStorage.getItem('token')
+    const tokenLS = window.localStorage.getItem('token');
     if (tokenLS) {
-      await context.validateToken(tokenLS)
+      await context.validateToken(tokenLS);
     }
-    setLoadingToken(false)
+    setLoadingToken(false);
   };
 
   useEffect(() => {
-    validateToken()
+    validateToken();
   }, []);
 
   if (loadingToken) {
