@@ -25,10 +25,10 @@ const Footer = () => {
                     <div className="columnasfooter col-xs-12 col-md-6 col-lg-3">
                         <p className="fs-3 text-center mb-5">Redes sociales</p>
                         <ul className="fontawesome d-flex justify-content-between">
-                            <Link to="/"><i class="fa-brands fa-square-facebook"></i></Link>
-                            <Link to="/"><i class="fa-brands fa-instagram"></i></Link>
-                            <Link to="/"><i class="fa-brands fa-twitter"></i></Link>
-                            <Link to="/"><i class="fa-brands fa-tiktok"></i></Link>
+                            <Link to="/"><i className="fa-brands fa-square-facebook"></i></Link>
+                            <Link to="/"><i className="fa-brands fa-instagram"></i></Link>
+                            <Link to="/"><i className="fa-brands fa-twitter"></i></Link>
+                            <Link to="/"><i className="fa-brands fa-tiktok"></i></Link>
                         </ul>
                     </div>
                 </div>

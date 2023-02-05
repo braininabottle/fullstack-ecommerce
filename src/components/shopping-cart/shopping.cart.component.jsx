@@ -41,9 +41,6 @@ const ShoppingCart = () => {
                     {cart.length? <span className='total-price'>Compra total: {formatter.format(totalPrice)}</span> : null}
                     </div>
                 </div>
-                {/* <div className='total-price'>
-                    {cart.length? <span>Total: {formatter.format(totalPrice)}</span> : null}
-                </div> */}
                 <div className='payPalButtons'>
                     {cart.length ? (
                         <PayPalButtons
@@ -62,6 +59,7 @@ const ShoppingCart = () => {
                                 return actions.order.capture().then((details) => {
                                     const name = details.payer.name.given_name;
                                     alert(`Transaction completed by ${name}`);
+                                    localStorage.removeItem("__paypal_storage__")
                                     context.cleanCart()
                                     productReducer()
                                     navigate('/')
@@ -77,110 +75,3 @@ const ShoppingCart = () => {
 
 export default ShoppingCart
 
-
-
-// tengo un componente llamado "productBox" que retorna un contenedor de un producto con la siguiente información:
-
-// import '../product-box/Product-Box.styles.css'
-// import { useContext } from 'react'
-// import CartContext from '../../context/CartContext'
-
-
-
-// const ProductBox = ({product}) => {
-
-//     const {title, imageUrl, qty, price,  _id} = product
-//     const context = useContext(CartContext)
-
-//     const formatter = new Intl.NumberFormat('es-CL', {
-//         style: 'currency',
-//         currency: 'CLP',
-      
-//       });
-
-//     return(
-//         <div className='product-container'>
-//             <img src={imageUrl}/>
-//             <div className='customProductCartTitle'>
-//                 <p>{title}</p>
-//             </div>
-//             <p className='customQtyBox'>{`${qty} * ${formatter.format(price)} = ${formatter.format(qty * price)}`}</p>
-//             <div className='cartDeleteButton mt-5'>
-//                 <button
-//                 onClick={()=>context.deleteProdcutFromCart(_id)} 
-//                 className='btn btn-dark'
-//                 >eliminar</button>
-//             </div>
-//         </div>
-//     )
-// }
-
-// export default ProductBox
-
-// luego en un compontente "ShoppingCart" renderizo una pagina de mi app con unos botones de paypal y además mapea el product box y trae la información según el producto que se esta comprando:
-
-// import React from 'react'
-// import { useContext, Fragment } from 'react'
-// import CartContext from '../../context/CartContext'
-// import ProductBox from '../product-box/ProductBox.component'
-// import '../shopping-cart/shopping.cart.styles.css'
-// import { PayPalButtons } from "@paypal/react-paypal-js";
-// import { useNavigate } from 'react-router-dom'
-// import axios from 'axios'
-
-// const ShoppingCart = () => {
-//     const context = useContext(CartContext)
-//     const { qty, cart } = context.cartState
-//     const navigate = useNavigate()
-
-//     const productReducer = async () => {
-//         try {
-//             const response = await axios.put('https://dramshop.onrender.com/api/products/reducedstock', { cart })
-//             console.log(response)
-//         } catch (error) {
-//             console.log(error.message)
-//         }
-//     }
-
-//     return (
-//         <Fragment>
-//             <div className='cart-container'>
-//                 <h1 className='cart-title mt-3 mb-3 text-white'>
-//                     Productos en tu carrito de compras <span className='text-white'>({qty})</span></h1>
-//                 <div className='product-cart-container'>
-//                     {cart.map(el => <ProductBox product={el} key={el._id} />)}
-//                 </div>
-//                 <div className='payPalButtons'>
-//                     {cart.length ? (
-//                         <PayPalButtons
-//                             createOrder={(data, actions) => {
-//                                 return actions.order.create({
-//                                     purchase_units: [
-//                                         {
-//                                             amount: {
-//                                                 value: "1.99",
-//                                             },
-//                                         },
-//                                     ],
-//                                 });
-//                             }}
-//                             onApprove={(data, actions) => {
-//                                 return actions.order.capture().then((details) => {
-//                                     const name = details.payer.name.given_name;
-//                                     alert(`Transaction completed by ${name}`);
-//                                     context.cleanCart()
-//                                     productReducer()
-//                                     navigate('/')
-//                                 });
-//                             }}
-//                         />
-//                     ) : null}
-//                 </div>
-//             </div>
-//         </Fragment>
-//     )
-// }
-
-// export default ShoppingCart
-
-// Lo ultimo que necesito lograr aquí es el precio total de la compra de todos los productos, como puedo hacerlo?
